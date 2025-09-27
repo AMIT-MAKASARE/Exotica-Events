@@ -1,5 +1,6 @@
 // src/components/Hero.jsx
 import React from "react";
+import heroVideo from "./imgVideos/Roh.mp4";
 
 export default function Hero() {
   return (
@@ -15,9 +16,7 @@ export default function Hero() {
         playsInline
         className="absolute md:h-full top-0 left-0 w-full h-full object-cover"
       >
-        <source
-          src="/src/components/imgVideos/Roh.mp4"
-          type="video/mp4"
+        <source src={heroVideo}    type="video/mp4"
         />
       </video>
 

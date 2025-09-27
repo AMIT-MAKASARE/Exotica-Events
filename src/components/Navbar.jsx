@@ -1,6 +1,8 @@
 // src/components/Navbar.jsx
 import React, { useState } from "react";
 import { Link } from "react-scroll";
+import mainLogo from "./imgVideos/mainLogo.jpg";
+
 
 export default function Navbar() {
   const [isOpen, setIsOpen] = useState(false);
@@ -32,7 +34,7 @@ export default function Navbar() {
       <div className="w-16 h-16 flex items-center justify-center">
         <a href="#home">
         <img
-          src="src/components/imgVideos/mainLogo.jpg"
+          src={mainLogo}
           alt="logo"
           className="rounded-full w-full h-full object-cover border-2 border-yellow-400 shadow-md"
         /></a>
